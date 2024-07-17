@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddSignalR();
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -25,5 +26,6 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 app.MapHub<NotificationHub>("/NotificationHub");
+app.MapControllers();
 
 app.Run();
