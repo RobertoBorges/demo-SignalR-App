@@ -1,8 +1,8 @@
+#This test project uses the REST Client extension for Visual Studio Code
+
 GET http://localhost:5142
 
-
 ###
-
 POST http://localhost:5142/api/notifications
 Content-Type: application/json
 
